@@ -19,3 +19,15 @@ counterMinusElem.addEventListener("click", () => {
 function updateDisplay() {
   counterDisplayElem.innerHTML = count;
 }
+
+let imageShowElem = document.querySelector(".imageShow");
+let showOrHideElem = document.getElementById("feature");
+
+imageShowElem.addEventListener("click", () => {
+  console.log("hello");
+  if (showOrHideElem.style.display == "inline") {
+    showOrHideElem.style.display = "none";
+  } else {
+    showOrHideElem.style.display = "inline";
+  }
+});
